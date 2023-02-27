@@ -1,0 +1,97 @@
+.container{
+  max-width: 90rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateX();
+  animation: oi .2s forwards;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+@keyframes oi {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+  
+}
+.content{
+  display: flex;
+  transition: transform 0.4s ease;
+}
+.title{
+  width: 60%;
+  margin: 0 20%;
+  margin-bottom: 2rem;
+}
+.item{
+  flex-shrink: 0;
+  width: 60%;
+  margin: 0 20%;
+  border-radius: 0.4rem;
+ z-index: 1;
+ 
+}
+.nav{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 7%;
+  margin-top: -20%;
+  position: absolute;
+  
+}
+.button{
+  border-radius: 50%;
+  border:none;
+  padding: 15px;
+  text-decoration: none;
+  transition: .4s;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.button:hover{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.minContent{
+  display: flex;
+  width: 60%;
+  margin: 0 20%;
+  flex-wrap: wrap;
+margin-bottom: 2rem;
+}
+.minItem{
+  display: flex;
+  width: 10%;
+  margin: 0 auto;
+  margin-top: .5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  align-items: center;
+}
+.caracteristicas{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 20%;
+}
+.caracteristicas h1{
+  margin-top: 1rem;
+  border-bottom:red 1px solid ;
+}
+.caracteristicas p{
+  margin: 1rem 0;
+}
+.caracteristicas button{
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  border: none;
+  background: red;
+  color: white;
+  border-radius: 0.4rem;
+  font-weight: bold;
+}

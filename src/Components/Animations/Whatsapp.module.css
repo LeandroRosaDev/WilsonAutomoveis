@@ -1,0 +1,25 @@
+.botao{
+  position: fixed;
+  width: 60px;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  animation-name: pulsar;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+@keyframes pulsar {
+  0% {
+    height: 50px;
+    width: 50px;
+  }
+  100% {
+    height: 65px;
+    width: 65px;
+  }
+}

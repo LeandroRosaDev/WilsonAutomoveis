@@ -1,0 +1,23 @@
+.content{
+  display: grid;
+  margin-top: 2rem;
+}
+.content img{
+  width: 100%;
+  grid-column: 1;
+  border-radius: 4px;
+  box-shadow: 0px 2px 10px 10px #f5f5f5;
+}
+.content h2{
+  text-align: center; 
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.conteudo div{
+  margin-left: 3rem;
+}
+.spacer{margin-top: 1rem;}

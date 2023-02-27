@@ -1,0 +1,67 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 4rem;
+}
+.content {
+  padding: 10rem 8rem;
+  margin-top: -8rem;
+}
+
+.title {
+  font-size: 2rem;
+  color: #f00;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.container p {
+  line-height: 1.6;
+}
+.button {
+  width: auto;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.4rem;
+  background: #FF0000  ;
+  color: #F8F8FF !important;
+  min-width: 16rem;
+  padding: 0.8rem 1.2rem;
+  box-sizing: border-box;
+  transition: 0.1s;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 15rem;
+}
+.button:hover{
+  background: #cc0000  ;
+  transition: .4s;
+  scale: 110%;
+}
+.fundo {
+  animation: circulo 12s infinite linear;
+}
+@keyframes circulo{
+  to{transform: rotate(360deg);}
+}
+.carros{
+  z-index: 1000;
+  position: absolute;
+}
+.carroImg{
+  width: 70px;
+}
+.vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  justify-items: center;
+  margin-top: 1rem;
+  text-align: start;
+}
+
+
+
+
+

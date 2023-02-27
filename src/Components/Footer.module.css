@@ -1,0 +1,48 @@
+.footer{
+  margin-top: 10rem;
+  background-color: #e60000;  
+  color: white;
+
+}
+.redesSociais{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10rem;
+}
+.redesSociais img{
+  max-width:  50px;
+  max-height: 50px;
+}
+.redesSociais a{
+color: white;
+padding: 2rem;
+}
+.redesSociais div{
+  display: flex;
+}
+.copy{
+ background-color: #cc0000;
+ text-align: center;
+ min-height: 5rem;
+ padding: 2rem;
+}
+.copy a{
+  margin-top: 0.425rem;
+  color: white;
+}
+.telefone::before{
+  content: url('../assets/telefone.svg');
+  margin-right: 10px;
+  float: left;
+}
+.GPS::before{
+  content: url('../assets/GPS.svg');
+  margin-right: 10px;
+  float: left;
+}
+.email::before{
+  content: url('../assets/email.svg');
+  margin-right: 10px;
+  float: left;
+}

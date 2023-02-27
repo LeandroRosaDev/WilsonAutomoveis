@@ -1,0 +1,65 @@
+.grade{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 150px;
+}
+.grade img{
+  background-color: aquamarine;
+  box-sizing: border-box;
+  width: 500px;
+  
+}
+.carros{
+  display: grid;
+  gap: 0.425rem;
+  padding: 10px;
+  box-shadow: 0px 2px 10px 10px #f5f5f5;
+}
+.info{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.ano::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  background: url('../../assets/Home/ano.svg') no-repeat center center;
+  margin-right: 0.2rem;
+  position: relative;
+
+}
+.combustivel::before{
+content: "";
+display: inline-block;
+width: 20px;
+height: 17px;
+background: url('../../assets/Home/combustivel.svg') no-repeat center center;
+margin-right: 0.2rem;
+position: relative;
+
+}.km::before{
+content: "";
+display: inline-block;
+width: 21px;
+height: 17px;
+background: url('../../assets/Home/km.svg') no-repeat center center;
+margin-right: 0.2rem;
+position: relative;
+
+}
+.carro::after{
+content: "";
+display: inline-block;
+width: 17px;
+height: 17px;
+background: url('../../assets/Home/OkVermelho.svg') no-repeat center center;
+margin-left: 0.5rem;
+position: relative;
+
+}
