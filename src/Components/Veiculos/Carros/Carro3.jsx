@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import Frente3 from '../../../assets/Veiculos/Carros/Carro3/Frente3.jpeg';
-import FrenteC3 from '../../../assets/Veiculos/Carros/Carro3/FrenteC3.jpeg';
-import FrenteM3 from '../../../assets/Veiculos/Carros/Carro3/FrenteM3.jpeg';
-import IntC3 from '../../../assets/Veiculos/Carros/Carro3/IntC3.jpeg';
-import IntF3 from '../../../assets/Veiculos/Carros/Carro3/IntF3.jpeg';
-import IntP3 from '../../../assets/Veiculos/Carros/Carro3/IntP3.jpeg';
-import LadoM3 from '../../../assets/Veiculos/Carros/Carro3/LadoM3.jpeg';
-import Painel3 from '../../../assets/Veiculos/Carros/Carro3/Painel3.jpeg';
-import TrasC3 from '../../../assets/Veiculos/Carros/Carro3/TrasC3.jpeg';
-import TrasM3 from '../../../assets/Veiculos/Carros/Carro3/TrasM3.jpeg';
+import Frente3 from '../../../assets/Veiculos/Carros/Carro3/Frente3.jpg';
+import FrenteC3 from '../../../assets/Veiculos/Carros/Carro3/FrenteC3.jpg';
+import FrenteM3 from '../../../assets/Veiculos/Carros/Carro3/FrenteM3.jpg';
+import IntC3 from '../../../assets/Veiculos/Carros/Carro3/IntC3.jpg';
+import IntF3 from '../../../assets/Veiculos/Carros/Carro3/IntF3.jpg';
+import IntP3 from '../../../assets/Veiculos/Carros/Carro3/IntP3.jpg';
+import LadoM3 from '../../../assets/Veiculos/Carros/Carro3/LadoM3.jpg';
+import Painel3 from '../../../assets/Veiculos/Carros/Carro3/Painel3.jpg';
+import TrasC3 from '../../../assets/Veiculos/Carros/Carro3/TrasC3.jpg';
+import TrasM3 from '../../../assets/Veiculos/Carros/Carro3/TrasM3.jpg';
 
 const Carro3 = () => {
   const slides = [

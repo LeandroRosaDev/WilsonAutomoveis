@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Sobre.module.css';
-import Casal from '../../assets/Sobre/casal feliz.png';
+import Casal from '../../assets/Sobre/casal feliz.jpg';
 import Tradição from '../../assets/Sobre/tradicao.png';
 import Comunicação from '../../assets/Sobre/comunicacao.png';
 import Contrato from '../../assets/Sobre/contrato.png';

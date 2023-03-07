@@ -1,15 +1,15 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import Frente5 from '../../../assets/Veiculos/Carros/Carro5/Frente5.jpeg';
-import FrenteC5 from '../../../assets/Veiculos/Carros/Carro5/FrenteC5.jpeg';
-import FrenteM5 from '../../../assets/Veiculos/Carros/Carro5/FrenteM5.jpeg';
-import IntC5 from '../../../assets/Veiculos/Carros/Carro5/IntC5.jpeg';
-import IntF5 from '../../../assets/Veiculos/Carros/Carro5/IntF5.jpeg';
-import IntP5 from '../../../assets/Veiculos/Carros/Carro5/IntP5.jpeg';
-import LadoM5 from '../../../assets/Veiculos/Carros/Carro5/LadoM5.jpeg';
-import Radio5 from '../../../assets/Veiculos/Carros/Carro5/Radio5.jpeg';
-import Tras5 from '../../../assets/Veiculos/Carros/Carro5/Tras5.jpeg';
-import TrasC5 from '../../../assets/Veiculos/Carros/Carro5/TrasC5.jpeg';
+import Frente5 from '../../../assets/Veiculos/Carros/Carro5/Frente5.jpg';
+import FrenteC5 from '../../../assets/Veiculos/Carros/Carro5/FrenteC5.jpg';
+import FrenteM5 from '../../../assets/Veiculos/Carros/Carro5/FrenteM5.jpg';
+import IntC5 from '../../../assets/Veiculos/Carros/Carro5/IntC5.jpg';
+import IntF5 from '../../../assets/Veiculos/Carros/Carro5/IntF5.jpg';
+import IntP5 from '../../../assets/Veiculos/Carros/Carro5/IntP5.jpg';
+import LadoM5 from '../../../assets/Veiculos/Carros/Carro5/LadoM5.jpg';
+import Radio5 from '../../../assets/Veiculos/Carros/Carro5/Radio5.jpg';
+import Tras5 from '../../../assets/Veiculos/Carros/Carro5/Tras5.jpg';
+import TrasC5 from '../../../assets/Veiculos/Carros/Carro5/TrasC5.jpg';
 
 const Carro4 = () => {
   const slides = [
