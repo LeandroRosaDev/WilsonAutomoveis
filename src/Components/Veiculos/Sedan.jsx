@@ -7,7 +7,7 @@ const Sedan = () => {
       <h1
         style={{ marginBottom: '1rem', marginTop: '4rem', textAlign: 'center' }}
       >
-        Exibindo todos os resultados para "Sedan"
+        Exibindo todos os resultados para carros "Sedan""
       </h1>
       <Veiculos />
     </div>
