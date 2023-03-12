@@ -8,7 +8,7 @@ import CompramosSeuCarro from '../assets/compramosCarro.png';
 const Header = () => {
   return (
     <header className={styles.Header}>
-      <Link to="/">
+      <Link to="/WilsonAutomoveis">
         <img className={styles.logo} src={Logo} alt="" />
       </Link>
       <nav>
