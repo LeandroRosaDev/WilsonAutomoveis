@@ -48,3 +48,28 @@
 .button:hover{
   scale: 110%;
 }
+/*RESPONSIVO*/
+@media (max-width: 850px){
+  .Header ul{gap: 20px;}
+  .link{
+    padding: 0 auto;
+    text-align: center;
+    padding: 10px 20px;
+  }
+  .link:hover{
+    color: white;
+    background-color: red;
+    transition: 0.4s;
+    border-radius: 0.2rem;
+  }
+  .link:hover:after{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
+  .logo{
+    width: 180px;
+    height: 35px;
+  }
+}

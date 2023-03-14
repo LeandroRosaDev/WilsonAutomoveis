@@ -13,7 +13,7 @@ const Mapa = () => {
   };
 
   return (
-    <div className="container">
+    <div className={`${styles.container} container`}>
       <h1 style={{ marginBottom: '1rem', marginTop: '4rem' }}>Nossa loja</h1>
       <h2>
         Atualmente, nossa loja fica localizada na rua Bela Vista , nº50 - Vilar

@@ -23,9 +23,8 @@
   grid-template-columns: repeat(4, 1fr);
   text-align: center;
   justify-items: center;
-  gap: 10rem;
+  gap: 5rem;
   border-radius: 0.4rem;
- 
 }
 
 .qualidades div img{
@@ -68,4 +67,16 @@
 }
 .text p{
   margin: 1rem;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 850px) {
+  .sobre{
+    grid-template-columns: 1fr;
+  }
+  .qualidades{
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 0 4rem;
+  }
 }

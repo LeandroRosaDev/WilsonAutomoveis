@@ -8,7 +8,6 @@
   padding: 150px;
 }
 .grade img{
-  background-color: aquamarine;
   box-sizing: border-box;
   width: 500px;
   
@@ -62,4 +61,10 @@ background: url('../../assets/Home/OkVermelho.svg') no-repeat center center;
 margin-left: 0.5rem;
 position: relative;
 
+}
+
+/*RESPONSIVO*/
+@media (max-width: 850px){
+  .grade {margin: 0 auto;
+  margin-top: -6rem;}
 }

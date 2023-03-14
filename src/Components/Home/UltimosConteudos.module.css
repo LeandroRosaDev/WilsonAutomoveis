@@ -1,5 +1,5 @@
 .title{
-  display: grid;
+ display: grid;
  justify-items: center;
  align-items: center;
  margin-bottom: 5rem;
@@ -49,4 +49,12 @@ gap: 1.5rem;
   background-color: #a30000;
   transition: 0.2s;
   cursor: pointer;
+}
+
+/*RESPONSIVO*/
+@media (max-width: 850px) {
+  .noticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

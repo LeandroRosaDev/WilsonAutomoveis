@@ -13,11 +13,13 @@ const Contato = () => {
         <a href="tel:+5521981731525">
           <img src={Telefone} alt="telefone" />
           <h1>ATENDIMENTO AO CLIENTE</h1>
+          <h2>ATENDIMENTO</h2>
           <p>(21) 9 8173 1525</p>
         </a>
         <a href="mailto:contato@wilsonautomoveis.com">
           <img src={Email} alt="Mapa" />
           <h1>EMAIL</h1>
+          <h2>EMAIL</h2>
           <p>vendas@wilsonautomóveis</p>
         </a>
         <a
@@ -26,6 +28,7 @@ const Contato = () => {
         >
           <img src={Gps} alt="Email" />
           <h1>NOSSA LOJA</h1>
+          <h2>NOSSA LOJA</h2>
           <p>Venha nos fazer uma visita</p>
         </a>
       </div>

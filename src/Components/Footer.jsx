@@ -25,7 +25,7 @@ const Footer = () => {
         <a className={styles.email} href="mailto:contato@wilsonautomoveis.com">
           contato@wilsonautomóveis
         </a>
-        <div>
+        <div className={styles.socialIcons}>
           <a
             target="_blank"
             href="https://www.facebook.com/wilsonautomoveis10?mibextid=LQQJ4d"

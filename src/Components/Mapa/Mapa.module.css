@@ -2,3 +2,10 @@
   height: 50vh;
   border-radius: 0.2rem;
 }
+
+/*RESPONSIVO*/
+@media (max-width: 850px){
+  .container{
+    margin: 0 2rem;
+  }
+}

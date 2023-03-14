@@ -61,7 +61,17 @@
   text-align: start;
 }
 
-
+/*RESPONSIVO*/
+@media (max-width: 850px) {
+  .container{grid-template-columns: 1fr;}
+  .content {
+    grid-row: 1;
+    
+  }
+  .carros, .fundo{
+    display: none;
+  }
+}
 
 
 

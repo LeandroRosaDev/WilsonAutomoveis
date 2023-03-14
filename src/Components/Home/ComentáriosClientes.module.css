@@ -58,3 +58,32 @@
   font-weight: bold;
   font-size: 1.2rem;
 }
+/*RESPONSIVO*/
+@media (max-width: 850px) {
+  .content{
+    background: white;
+    margin: 0 2rem;
+    margin-bottom: 15rem;
+  }
+  .comment{
+    grid-template-columns: 1fr 1fr;
+  }
+  .comment div{
+    background-color: red;
+  }
+  .comment div h1{
+    padding: 40px 10px;  
+  }
+  .comments {
+    margin-top: -10rem;
+   height: 80rem;
+  }
+  .title,   .title h1{
+    color: #FF0000;
+    gap: 2rem;
+  }
+  .comment div h1, .comment div p,.comment div span{
+    color: white;
+  }
+
+} 

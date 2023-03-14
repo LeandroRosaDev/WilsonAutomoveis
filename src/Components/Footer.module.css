@@ -46,3 +46,14 @@ padding: 2rem;
   margin-right: 10px;
   float: left;
 }
+/*RESPONSIVO*/
+@media (max-width: 850px){
+  .redesSociais{display: grid;
+  grid-template-rows: 1fr 1fr;}
+  .redesSociais a{
+    padding: 1rem;
+  }
+  .logo{
+    display: none;
+  }
+}
