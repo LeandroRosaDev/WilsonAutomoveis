@@ -52,7 +52,7 @@ const ComentáriosClientes = () => {
               <span>"</span>
             </h1>
             <img src={jorgueImg} alt="" />
-            <p>Jorgue Rodrigues</p>
+            <p>Jorge Rodrigues</p>
           </div>
           <div>
             <h1>

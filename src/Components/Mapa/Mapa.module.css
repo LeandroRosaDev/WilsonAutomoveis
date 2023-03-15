@@ -4,7 +4,7 @@
 }
 
 /*RESPONSIVO*/
-@media (max-width: 850px){
+@media (max-width: 1380px){
   .container{
     margin: 0 2rem;
   }

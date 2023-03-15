@@ -38,7 +38,7 @@ const GradeVeiculos = () => {
       <div className={`${styles.grade} container`}>
         <Link to="/civic" className={styles.carros} href="">
           <img src={carro1} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>Honda civic LXS Flex</div>
+          <div className={styles.carro}>Honda civic LXS </div>
           <div className={styles.info}>
             <p className={styles.ano}>2009</p>
             <p className={styles.combustivel}>Flex</p>

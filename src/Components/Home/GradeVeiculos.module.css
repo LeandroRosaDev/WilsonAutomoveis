@@ -131,3 +131,16 @@
     margin-bottom: 2rem;
   }
 }
+@media (max-width:450px){
+  .grade{
+    gap: 1rem;
+    margin: 0rem;
+   
+  }
+  .carros{
+    margin: 0rem;
+  }
+  .info{
+    gap: 1rem;
+  }
+}

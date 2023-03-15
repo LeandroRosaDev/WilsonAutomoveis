@@ -13,10 +13,7 @@ import carro8 from '../../assets/Veiculos/Carros/Carro8/Frente8.jpg';
 const Veiculo = () => {
   return (
     <div>
-      <h1
-        className="container"
-        style={{ textAlign: 'center', marginTop: '2rem' }}
-      >
+      <h1 className={`${styles.title} container`}>
         Confira agora o nosso estoque de veículos
       </h1>
       <div className={`${styles.grade} container`}>

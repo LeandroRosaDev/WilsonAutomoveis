@@ -1,5 +1,5 @@
 .content{
-  margin-bottom: 10rem;
+  margin-bottom: -50rem;
   background: url('../../assets/Home/backgroundComents.png');
 }
 .title{
@@ -44,7 +44,6 @@
 .comment div h1{
   font-size: 1rem;
   line-height: 1.4;
-  padding: 20px 40px;
   font-weight: 500;
   color: black;
 }
@@ -63,7 +62,7 @@
   .content{
     background: white;
     margin: 0 2rem;
-    margin-bottom: 15rem;
+    margin-bottom: -50rem;
   }
   .comment{
     grid-template-columns: 1fr 1fr;
@@ -87,3 +86,11 @@
   }
 
 } 
+@media(max-width:450px){
+  .comment{
+    grid-template-columns: 1fr;
+  }
+  .content {
+    margin-bottom: 0rem;
+  }
+}

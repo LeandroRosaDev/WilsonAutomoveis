@@ -8,7 +8,7 @@ import Banner from '../../assets/Contato/contato.jpg';
 const Contato = () => {
   return (
     <section className={`${styles.contato} container`}>
-      <img src={Banner} alt="" />
+      <img src={Banner} alt="" className={styles.banner} />
       <div className={styles.content}>
         <a href="tel:+5521981731525">
           <img src={Telefone} alt="telefone" />

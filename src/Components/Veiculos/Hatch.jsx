@@ -3,7 +3,7 @@ import Veiculos from './Veiculos';
 
 const Hatch = () => {
   return (
-    <div className="container">
+    <div>
       <h1
         style={{ marginBottom: '1rem', marginTop: '4rem', textAlign: 'center' }}
       >

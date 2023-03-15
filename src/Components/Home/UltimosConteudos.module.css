@@ -1,15 +1,19 @@
+
 .title{
  display: grid;
  justify-items: center;
  align-items: center;
  margin-bottom: 5rem;
  gap: 1rem;
+ margin-top: 70rem;
+
 }
 .title img{
   width: 100px;
 }
 .noticias{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 .noticias div {
@@ -18,9 +22,6 @@
 }
 .noticias div:hover {
   scale: 105%;
-}
-.infos img{
-  max-width: 20rem;
 }
 .infos{
 display: grid; 
@@ -32,7 +33,6 @@ gap: 1.5rem;
 
 }
 .infos p{
-  max-width: 20rem;
   min-height: 4rem;
 
 }
@@ -42,7 +42,7 @@ gap: 1.5rem;
   border: none;
   padding: 1rem 2rem;
   color: white;
-  margin-top: 4rem;
+  margin-top: 2rem;
   font-weight: bold;
 }
 .infos button:hover{
@@ -50,11 +50,27 @@ gap: 1.5rem;
   transition: 0.2s;
   cursor: pointer;
 }
+.content{
+  margin-top: 80rem;
+
+}
 
 /*RESPONSIVO*/
+@media (max-width: 1380px){
+  .content {
+    margin-top: 0rem;
+  }
+  
+}
 @media (max-width: 850px) {
   .noticias{
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media(max-width:450px){
+  .noticias{
+    gap: 2rem;
+    grid-template-columns: 1fr;
   }
 }

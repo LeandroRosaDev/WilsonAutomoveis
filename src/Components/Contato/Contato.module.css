@@ -24,7 +24,7 @@
 .content a p{
   margin-bottom: 1rem;
 }
-.contato img{
+.banner{
   width: 100%;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -34,10 +34,12 @@
 }
 
 /*RESPONSIVO*/
-@media (max-width: 850px){
+@media (max-width: 1380px){
   .contato{
     margin: 0 2rem;
   }
+}
+@media (max-width: 850px){
   .content a img{
     width: 50px;
   }
@@ -47,4 +49,19 @@
   .content a h2{
     display: block;
    }
+}
+
+@media (max-width:450px){
+  .banner {
+    display: none;
+  }
+  .content{
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+  .content a{
+    background-color: red;
+    color: #fff;
+    border-radius: 0.4rem;
+  }
 }

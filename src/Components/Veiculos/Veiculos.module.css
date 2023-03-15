@@ -7,6 +7,11 @@
   margin-top: 2rem;
   padding: 150px;
 }
+.title {
+  text-align: center;
+  margin: 2rem auto;
+  
+}
 .grade img{
   box-sizing: border-box;
   width: 500px;
@@ -65,6 +70,15 @@ position: relative;
 
 /*RESPONSIVO*/
 @media (max-width: 850px){
-  .grade {margin: 0 auto;
-  margin-top: -6rem;}
+  .grade {
+    margin: 0 auto;
+    margin-top: -6rem;}
+}
+@media (max-width: 450px){
+  .grade{
+    margin: 0 1rem;
+    padding: 0px;
+    gap: 1rem;
+    
+  }
 }

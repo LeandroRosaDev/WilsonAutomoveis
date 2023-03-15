@@ -70,6 +70,11 @@
 }
 
 /*RESPONSIVO*/
+@media (max-width: 1380px){
+  .sobre{
+    margin: 4rem 2rem;
+  }
+}
 @media (max-width: 850px) {
   .sobre{
     grid-template-columns: 1fr;
@@ -78,5 +83,19 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 0 4rem;
+  }
+}
+@media (max-width: 450px){
+  .container:hover .overlay{
+    display: none;
+  }
+  .qualidades{
+    gap: 2rem;
+    margin: 0 auto;
+  }
+  .container{
+    height: 200px;
+    width: 150px;
+    display: grid;
   }
 }

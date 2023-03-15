@@ -73,3 +73,15 @@
     height: 35px;
   }
 }
+@media (max-width: 450px){
+  .Header ul{gap: 5px;}
+}
+@media(max-width:450px){
+  .Header{
+    display: grid;
+  }
+  .logo{
+    margin: 0rem auto;
+    margin-bottom: 1rem;
+  }
+}
