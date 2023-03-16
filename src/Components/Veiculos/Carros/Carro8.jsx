@@ -128,22 +128,13 @@ const Carro8 = () => {
           <a
             target="_blank"
             href="https://wa.me/5521981731525?text=Olá,%20tudo%20bem?%20Somos%20a%20Wilson%20Automóveis,%20sinta-se%20a%20vontade%20para%20entrar%20em%20contato%20conosco"
-            style={{
-              color: 'white',
-              padding: '0.5rem 10rem',
-            }}
+            className={styles.buttonContato}
           >
             Entre em contato agora via Whatsapp
           </a>
         </button>
         <button>
-          <a
-            style={{
-              color: 'white',
-              padding: '0.5rem 8rem',
-            }}
-            href="tel:+5521981731525"
-          >
+          <a className={styles.buttonContato} href="tel:+5521981731525">
             Ou clique aqui e fale diretamente com um de nossos vendedores!
           </a>
         </button>

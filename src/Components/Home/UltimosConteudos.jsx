@@ -41,7 +41,7 @@ const UltimosConteudos = () => {
           </Link>
         </div>
         <div>
-          <Link to="Cnh" className={styles.infos}>
+          <Link to="/Cnh" className={styles.infos}>
             <img src={CNH} alt="Carteira nacional de habilitação" />
             <p>
               Cuidado para não ter a sua CNH suspensa verifique agora sua

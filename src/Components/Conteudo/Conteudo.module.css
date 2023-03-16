@@ -1,12 +1,13 @@
 .content{
   display: grid;
-  margin-top: 2rem;
+  margin: 0 auto;
 }
 .content img{
   width: 100%;
   grid-column: 1;
   border-radius: 4px;
   box-shadow: 0px 2px 10px 10px #f5f5f5;
+  border: 1px solid red;
 }
 .content h2{
   text-align: center; 
@@ -16,8 +17,20 @@
 .conteudo {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  
 }
-.conteudo div{
-  margin-left: 3rem;
-}
+
 .spacer{margin-top: 1rem;}
+
+/*RESPONSIVO*/
+
+@media (max-width:450px){
+  .content img{
+    grid-row: 2;
+    margin: 0 auto;
+  }
+  .conteudo{
+    grid-template-columns: 1fr;
+  }
+}
