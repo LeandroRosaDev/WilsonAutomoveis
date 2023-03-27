@@ -1,55 +1,8 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import Frente7 from '../../../assets/Veiculos/Carros/Carro7/Frente7.jpg';
-import FrenteC7 from '../../../assets/Veiculos/Carros/Carro7/FrenteC7.jpg';
-import FrenteM7 from '../../../assets/Veiculos/Carros/Carro7/FrenteM7.jpg';
-import IntM7 from '../../../assets/Veiculos/Carros/Carro7/IntM7.jpg';
-import LadoM7 from '../../../assets/Veiculos/Carros/Carro7/LadoM7.jpg';
-import LadoC7 from '../../../assets/Veiculos/Carros/Carro7/LadoC7.jpg';
-import Tras7 from '../../../assets/Veiculos/Carros/Carro7/Tras7.jpg';
-import TrasC7 from '../../../assets/Veiculos/Carros/Carro7/TrasC7.jpg';
-import Painel7 from '../../../assets/Veiculos/Carros/Carro7/Painel7.jpg';
+import Dados from '../../../Dados';
 
 const Carro7 = () => {
-  const slides = [
-    {
-      id: 'slide1',
-      urlImg: Frente7,
-    },
-    {
-      id: 'slide2',
-      urlImg: FrenteC7,
-    },
-    {
-      id: 'slide3',
-      urlImg: FrenteM7,
-    },
-    {
-      id: 'slide4',
-      urlImg: IntM7,
-    },
-    {
-      id: 'slide5',
-      urlImg: LadoC7,
-    },
-    {
-      id: 'slide6',
-      urlImg: LadoM7,
-    },
-    {
-      id: 'slide7',
-      urlImg: Tras7,
-    },
-    {
-      id: 'slide8',
-      urlImg: TrasC7,
-    },
-    {
-      id: 'slide9',
-      urlImg: Painel7,
-    },
-  ];
-
   const [active, setActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
@@ -63,13 +16,13 @@ const Carro7 = () => {
     if (active > 0) setActive(active - 1);
   }
   function slideNext() {
-    if (active < slides.length - 1) setActive(active + 1);
+    if (active < Dados[6].imgUrl.length - 1) setActive(active + 1);
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.title}>
-        <h1>Volkswagen Voyage 1.6 2011/2011 &#9989;</h1>
+        <h1>{Dados[6].title}</h1>
       </div>
 
       <div
@@ -77,10 +30,10 @@ const Carro7 = () => {
         className={styles.content}
         style={{ transform: `translateX(${position}px)` }}
       >
-        {slides.map((slide) => (
+        {Dados[6].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.item}
           />
@@ -95,10 +48,10 @@ const Carro7 = () => {
         </button>
       </nav>
       <div className={styles.minContent}>
-        {slides.map((slide) => (
+        {Dados[6].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.minItem}
           />
@@ -106,16 +59,9 @@ const Carro7 = () => {
       </div>
       <div className={styles.caracteristicas}>
         <h1>Características</h1>
-        <p>
-          Chave Reserva &#10004; <span></span> IPVA Pago &#10004; <span></span>
-          Licenciado &#10004; Manual &#10004;
-        </p>
+        <p>{Dados[6].caracteristicas}</p>
         <h1>Opcionais</h1>
-        <p>
-          Alarme &#10004; Ar quente &#10004; Direção Hidraulica &#10004; Porta
-          copos &#10004; Travas elétricas &#10004; Vidros elétricos &#10004; Cd
-          player com Bluetooth&#10004;
-        </p>
+        <p>{Dados[6].opcionais}</p>
         <h1>Informações do veículo</h1>
         <p>Wilson Automóveis, há mais de 15 anos realizando sonhos!</p>
         <p>

@@ -1,60 +1,8 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import Frente4 from '../../../assets/Veiculos/Carros/Carro4/Frente4.jpg';
-import FrenteC4 from '../../../assets/Veiculos/Carros/Carro4/FrenteC4.jpg';
-import FrenteM4 from '../../../assets/Veiculos/Carros/Carro4/FrenteM4.jpg';
-import IntC4 from '../../../assets/Veiculos/Carros/Carro4/IntC4.jpg';
-import IntM4 from '../../../assets/Veiculos/Carros/Carro4/IntM4.jpg';
-import IntP4 from '../../../assets/Veiculos/Carros/Carro4/IntP4.jpg';
-import LadoC4 from '../../../assets/Veiculos/Carros/Carro4/LadoC4.jpg';
-import LadoM4 from '../../../assets/Veiculos/Carros/Carro4/LadoM4.jpg';
-import Tras4 from '../../../assets/Veiculos/Carros/Carro4/Tras4.jpg';
-import TrasC4 from '../../../assets/Veiculos/Carros/Carro4/TrasC4.jpg';
+import Dados from '../../../Dados';
 
 const Carro4 = () => {
-  const slides = [
-    {
-      id: 'slide1',
-      urlImg: Frente4,
-    },
-    {
-      id: 'slide2',
-      urlImg: FrenteC4,
-    },
-    {
-      id: 'slide3',
-      urlImg: FrenteM4,
-    },
-    {
-      id: 'slide4',
-      urlImg: IntC4,
-    },
-    {
-      id: 'slide5',
-      urlImg: IntM4,
-    },
-    {
-      id: 'slide6',
-      urlImg: IntP4,
-    },
-    {
-      id: 'slide7',
-      urlImg: LadoC4,
-    },
-    {
-      id: 'slide8',
-      urlImg: LadoM4,
-    },
-    {
-      id: 'slide9',
-      urlImg: Tras4,
-    },
-    {
-      id: 'slide10',
-      urlImg: TrasC4,
-    },
-  ];
-
   const [active, setActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
@@ -68,14 +16,13 @@ const Carro4 = () => {
     if (active > 0) setActive(active - 1);
   }
   function slideNext() {
-    if (active < slides.length - 1) setActive(active + 1);
+    if (active < Dados[3].imgUrl.length - 1) setActive(active + 1);
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.title}>
-        <h1>Laguna 2.0 - 1995/1995 &#9989;</h1>
-        <img src="" alt="" />
+        <h1>{Dados[3].title}</h1>
       </div>
 
       <div
@@ -83,10 +30,10 @@ const Carro4 = () => {
         className={styles.content}
         style={{ transform: `translateX(${position}px)` }}
       >
-        {slides.map((slide) => (
+        {Dados[3].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.item}
           />
@@ -101,10 +48,10 @@ const Carro4 = () => {
         </button>
       </nav>
       <div className={styles.minContent}>
-        {slides.map((slide) => (
+        {Dados[3].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.minItem}
           />
@@ -112,15 +59,9 @@ const Carro4 = () => {
       </div>
       <div className={styles.caracteristicas}>
         <h1>Características</h1>
-        <p>
-          IPVA Pago &#10004; <span></span>
-          Licenciado &#10004; Manual &#10004;
-        </p>
+        <p>{Dados[3].caracteristicas}</p>
         <h1>Opcionais</h1>
-        <p>
-          Alarme &#10004; Ar quente &#10004; Travas elétricas &#10004; Vidros
-          elétricos &#10004;
-        </p>
+        <p>{Dados[3].opcionais}</p>
         <h1>Informações do veículo</h1>
         <p>Wilson Automóveis, há mais de 15 anos realizando sonhos!</p>
         <p>

@@ -1,60 +1,8 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import Frente5 from '../../../assets/Veiculos/Carros/Carro5/Frente5.jpg';
-import FrenteC5 from '../../../assets/Veiculos/Carros/Carro5/FrenteC5.jpg';
-import FrenteM5 from '../../../assets/Veiculos/Carros/Carro5/FrenteM5.jpg';
-import IntC5 from '../../../assets/Veiculos/Carros/Carro5/IntC5.jpg';
-import IntF5 from '../../../assets/Veiculos/Carros/Carro5/IntF5.jpg';
-import IntP5 from '../../../assets/Veiculos/Carros/Carro5/IntP5.jpg';
-import LadoM5 from '../../../assets/Veiculos/Carros/Carro5/LadoM5.jpg';
-import Radio5 from '../../../assets/Veiculos/Carros/Carro5/Radio5.jpg';
-import Tras5 from '../../../assets/Veiculos/Carros/Carro5/Tras5.jpg';
-import TrasC5 from '../../../assets/Veiculos/Carros/Carro5/TrasC5.jpg';
+import Dados from '../../../Dados';
 
 const Carro4 = () => {
-  const slides = [
-    {
-      id: 'slide1',
-      urlImg: Frente5,
-    },
-    {
-      id: 'slide2',
-      urlImg: FrenteC5,
-    },
-    {
-      id: 'slide3',
-      urlImg: FrenteM5,
-    },
-    {
-      id: 'slide4',
-      urlImg: IntC5,
-    },
-    {
-      id: 'slide5',
-      urlImg: IntF5,
-    },
-    {
-      id: 'slide6',
-      urlImg: IntP5,
-    },
-    {
-      id: 'slide7',
-      urlImg: LadoM5,
-    },
-    {
-      id: 'slide8',
-      urlImg: Radio5,
-    },
-    {
-      id: 'slide9',
-      urlImg: Tras5,
-    },
-    {
-      id: 'slide10',
-      urlImg: TrasC5,
-    },
-  ];
-
   const [active, setActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
@@ -68,13 +16,13 @@ const Carro4 = () => {
     if (active > 0) setActive(active - 1);
   }
   function slideNext() {
-    if (active < slides.length - 1) setActive(active + 1);
+    if (active < Dados[4].imgUrl.length - 1) setActive(active + 1);
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.title}>
-        <h1>Fiat Siena EL1.0 Fire 2011/2011 &#9989;</h1>
+        <h1>{Dados[4].title}</h1>
         <img src="" alt="" />
       </div>
 
@@ -83,10 +31,10 @@ const Carro4 = () => {
         className={styles.content}
         style={{ transform: `translateX(${position}px)` }}
       >
-        {slides.map((slide) => (
+        {Dados[4].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.item}
           />
@@ -101,10 +49,10 @@ const Carro4 = () => {
         </button>
       </nav>
       <div className={styles.minContent}>
-        {slides.map((slide) => (
+        {Dados[4].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.minItem}
           />
@@ -112,16 +60,9 @@ const Carro4 = () => {
       </div>
       <div className={styles.caracteristicas}>
         <h1>Características</h1>
-        <p>
-          Chave Reserva &#10004; <span></span> IPVA Pago &#10004; <span></span>
-          Licenciado &#10004; Manual &#10004;
-        </p>
+        <p>{Dados[4].caracteristicas}</p>
         <h1>Opcionais</h1>
-        <p>
-          Alarme &#10004; Ar quente &#10004; Direção Hidraulica &#10004; Porta
-          copos &#10004; Travas elétricas &#10004; Vidros elétricos &#10004; Cd
-          player com MP3&#10004;
-        </p>
+        <p>{Dados[4].opcionais}</p>
         <h1>Informações do veículo</h1>
         <p>Wilson Automóveis, há mais de 15 anos realizando sonhos!</p>
         <p>

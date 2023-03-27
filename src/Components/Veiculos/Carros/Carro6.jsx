@@ -1,81 +1,8 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import Frente6 from '../../../assets/Veiculos/Carros/Carro6/Frente6.jpg';
-import FrenteC6 from '../../../assets/Veiculos/Carros/Carro6/FrenteC6.jpg';
-import FrenteM6 from '../../../assets/Veiculos/Carros/Carro6/FrenteM6.jpg';
-import IntC6 from '../../../assets/Veiculos/Carros/Carro6/IntC6.jpg';
-import IntF6 from '../../../assets/Veiculos/Carros/Carro6/IntF6.jpg';
-import IntM6 from '../../../assets/Veiculos/Carros/Carro6/IntM6.jpg';
-import IntP6 from '../../../assets/Veiculos/Carros/Carro6/IntP6.jpg';
-import IntTras6 from '../../../assets/Veiculos/Carros/Carro6/IntTras6.jpg';
-import LadoM6 from '../../../assets/Veiculos/Carros/Carro6/LadoM6.jpg';
-import LadoC6 from '../../../assets/Veiculos/Carros/Carro6/LadoC6.jpg';
-import Radio6 from '../../../assets/Veiculos/Carros/Carro6/Radio6.jpg';
-import Tras6 from '../../../assets/Veiculos/Carros/Carro6/Tras6.jpg';
-import TrasC6 from '../../../assets/Veiculos/Carros/Carro6/TrasC6.jpg';
-import Painel6 from '../../../assets/Veiculos/Carros/Carro6/Painel6.jpg';
+import Dados from '../../../Dados';
 
 const Carro6 = () => {
-  const slides = [
-    {
-      id: 'slide1',
-      urlImg: Frente6,
-    },
-    {
-      id: 'slide2',
-      urlImg: FrenteC6,
-    },
-    {
-      id: 'slide3',
-      urlImg: FrenteM6,
-    },
-    {
-      id: 'slide4',
-      urlImg: IntC6,
-    },
-    {
-      id: 'slide5',
-      urlImg: IntF6,
-    },
-    {
-      id: 'slide6',
-      urlImg: IntM6,
-    },
-    {
-      id: 'slide7',
-      urlImg: IntP6,
-    },
-    {
-      id: 'slide8',
-      urlImg: LadoM6,
-    },
-    {
-      id: 'slide9',
-      urlImg: LadoC6,
-    },
-
-    {
-      id: 'slide10',
-      urlImg: Radio6,
-    },
-    {
-      id: 'slide11',
-      urlImg: Tras6,
-    },
-    {
-      id: 'slide12',
-      urlImg: TrasC6,
-    },
-    {
-      id: 'slide13',
-      urlImg: IntTras6,
-    },
-    {
-      id: 'slide14',
-      urlImg: Painel6,
-    },
-  ];
-
   const [active, setActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
@@ -89,14 +16,13 @@ const Carro6 = () => {
     if (active > 0) setActive(active - 1);
   }
   function slideNext() {
-    if (active < slides.length - 1) setActive(active + 1);
+    if (active < Dados[5].imgUrl.length - 1) setActive(active + 1);
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.title}>
-        <h1>Volkswagen T-Cross 1.0 TSI Flex 12v Aut 2021 &#9989;</h1>
-        <img src="" alt="" />
+        <h1>{Dados[5].title}</h1>
       </div>
 
       <div
@@ -104,10 +30,10 @@ const Carro6 = () => {
         className={styles.content}
         style={{ transform: `translateX(${position}px)` }}
       >
-        {slides.map((slide) => (
+        {Dados[5].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.item}
           />
@@ -122,10 +48,10 @@ const Carro6 = () => {
         </button>
       </nav>
       <div className={styles.minContent}>
-        {slides.map((slide) => (
+        {Dados[5].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.minItem}
           />
@@ -133,17 +59,9 @@ const Carro6 = () => {
       </div>
       <div className={styles.caracteristicas}>
         <h1>Características</h1>
-        <p>
-          Chave Reserva &#10004; <span></span> IPVA Pago &#10004; <span></span>
-          Licenciado &#10004; Automático &#10004;
-        </p>
+        <p>{Dados[5].caracteristicas}</p>
         <h1>Opcionais</h1>
-        <p>
-          Alarme &#10004; Ar quente &#10004; Direção Hidraulica &#10004; Porta
-          copos &#10004; Travas elétricas &#10004; Vidros elétricos &#10004;
-          Airbag motorista &#10004; Airbag passageiro &#10004; Cd player com
-          Bluetooth&#10004;
-        </p>
+        <p>{Dados[5].opcionais}</p>
         <h1>Informações do veículo</h1>
         <p>Wilson Automóveis, há mais de 15 anos realizando sonhos!</p>
         <p>

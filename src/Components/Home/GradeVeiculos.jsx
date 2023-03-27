@@ -1,12 +1,5 @@
 import React from 'react';
-import carro1 from '../../assets/Veiculos/Carros/Carro1/Frente1.jpg';
-import carro2 from '../../assets/Veiculos/Carros/Carro2/FrenteC2.jpg';
-import carro3 from '../../assets/Veiculos/Carros/Carro3/Frente3.jpg';
-import carro4 from '../../assets/Veiculos/Carros/Carro4/Frente4.jpg';
-import carro5 from '../../assets/Veiculos/Carros/carro5/Frente5.jpg';
-import carro6 from '../../assets/Veiculos/Carros/Carro6/Frente6.jpg';
-import carro7 from '../../assets/Veiculos/Carros/Carro7/Frente7.jpg';
-import carro8 from '../../assets/Veiculos/Carros/Carro8/Frente8.jpg';
+import Dados from '../../Dados';
 import Hatch from '../../assets/Home/hatch.png';
 import PickUp from '../../assets/Home/pick up.png';
 import SUV from '../../assets/Home/SUV.png';
@@ -37,82 +30,115 @@ const GradeVeiculos = () => {
       </div>
       <div className={`${styles.grade} container`}>
         <Link to="/civic" className={styles.carros} href="">
-          <img src={carro1} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>Honda civic LXS </div>
+          <img
+            src={Dados[0].imgFrente}
+            alt="imgCarro"
+            className={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[0].shortTitle}</div>
           <div className={styles.info}>
-            <p className={styles.ano}>2009</p>
-            <p className={styles.combustivel}>Flex</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[0].ano}</p>
+            <p className={styles.combustivel}>{Dados[0].combustivel}</p>
+            <p className={styles.km}>{Dados[0].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>
         <Link to="/ranger" className={styles.carros} href="">
-          <img src={carro2} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>Ford Ranger XLS 2.5 16V 4x2</div>
+          <img
+            src={Dados[1].imgFrente}
+            alt="imgCarro"
+            className={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[1].shortTitle}</div>
           <div className={styles.info}>
-            <p className={styles.ano}>2014</p>
-            <p className={styles.combustivel}>Gas</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[1].ano}</p>
+            <p className={styles.combustivel}>{Dados[1].combustivel}</p>
+            <p className={styles.km}>{Dados[1].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>
         <Link to="/ka" className={styles.carros} href="">
-          <img src={carro3} alt="imgCarro" classN ame={styles.imgCarro} />
-          <div className={styles.carro}>FordKa Trail 1.0 12v</div>
+          <img
+            src={Dados[2].imgFrente}
+            alt="imgCarro"
+            classN
+            ame={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[2].shortTitle}</div>
           <div className={styles.info}>
-            <p className={styles.ano}>2018</p>
-            <p className={styles.combustivel}>Gas</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[2].ano}</p>
+            <p className={styles.combustivel}>{Dados[2].combustivel}</p>
+            <p className={styles.km}>{Dados[2].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>
         <Link to="/laguna" className={styles.carros} href="">
-          <img src={carro4} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>Laguna 2.0 </div>
+          <img
+            src={Dados[3].imgFrente}
+            alt="imgCarro"
+            className={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[3].shortTitle} </div>
           <div className={styles.info}>
-            <p className={styles.ano}>1995</p>
-            <p className={styles.combustivel}>Gas</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[3].ano}</p>
+            <p className={styles.combustivel}>{Dados[3].combustivel}</p>
+            <p className={styles.km}>{Dados[3].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>
         <Link to="/siena" className={styles.carros} href="">
-          <img src={carro5} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>Fiat Siena EL 1.0 Fire</div>
+          <img
+            src={Dados[4].imgFrente}
+            alt="imgCarro"
+            className={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[4].shortTitle}</div>
           <div className={styles.info}>
-            <p className={styles.ano}>2011</p>
-            <p className={styles.combustivel}>Flex</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[4].ano}</p>
+            <p className={styles.combustivel}>{Dados[4].combustivel}</p>
+            <p className={styles.km}>{Dados[4].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>
         <Link to="/tcross" className={styles.carros} href="">
-          <img src={carro6} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>VW T-Cross 1.0 TSI</div>
+          <img
+            src={Dados[5].imgFrente}
+            alt="imgCarro"
+            className={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[5].shortTitle}</div>
           <div className={styles.info}>
-            <p className={styles.ano}>2021</p>
-            <p className={styles.combustivel}>Flex</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[5].ano}</p>
+            <p className={styles.combustivel}>{Dados[5].combustivel}</p>
+            <p className={styles.km}>{Dados[5].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>
         <Link to="/voyage" className={styles.carros} href="">
-          <img src={carro7} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>VW Voyage </div>
+          <img
+            src={Dados[6].imgFrente}
+            alt="imgCarro"
+            className={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[6].shortTitle}</div>
           <div className={styles.info}>
-            <p className={styles.ano}>2015</p>
-            <p className={styles.combustivel}>GNV</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[6].ano}</p>
+            <p className={styles.combustivel}>{Dados[6].combustivel}</p>
+            <p className={styles.km}>{Dados[6].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>
-        <Link to="/laguna" className={styles.carros} href="">
-          <img src={carro8} alt="imgCarro" className={styles.imgCarro} />
-          <div className={styles.carro}>Hyundai HB20S 1.6A Comfort</div>
+        <Link to="/undefined" className={styles.carros} href="">
+          <img
+            src={Dados[6].imgFrente}
+            alt="imgCarro"
+            className={styles.imgCarro}
+          />
+          <div className={styles.carro}>{Dados[6].shortTitle}</div>
           <div className={styles.info}>
-            <p className={styles.ano}>2015</p>
-            <p className={styles.combustivel}>GNV</p>
-            <p className={styles.km}>124.544</p>
+            <p className={styles.ano}>{Dados[6].ano}</p>
+            <p className={styles.combustivel}>{Dados[6].combustivel}</p>
+            <p className={styles.km}>{Dados[6].km}</p>
           </div>
           <div>R$ 57.990</div>
         </Link>

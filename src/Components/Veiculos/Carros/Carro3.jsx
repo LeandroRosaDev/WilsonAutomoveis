@@ -1,60 +1,8 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import Frente3 from '../../../assets/Veiculos/Carros/Carro3/Frente3.jpg';
-import FrenteC3 from '../../../assets/Veiculos/Carros/Carro3/FrenteC3.jpg';
-import FrenteM3 from '../../../assets/Veiculos/Carros/Carro3/FrenteM3.jpg';
-import IntC3 from '../../../assets/Veiculos/Carros/Carro3/IntC3.jpg';
-import IntF3 from '../../../assets/Veiculos/Carros/Carro3/IntF3.jpg';
-import IntP3 from '../../../assets/Veiculos/Carros/Carro3/IntP3.jpg';
-import LadoM3 from '../../../assets/Veiculos/Carros/Carro3/LadoM3.jpg';
-import Painel3 from '../../../assets/Veiculos/Carros/Carro3/Painel3.jpg';
-import TrasC3 from '../../../assets/Veiculos/Carros/Carro3/TrasC3.jpg';
-import TrasM3 from '../../../assets/Veiculos/Carros/Carro3/TrasM3.jpg';
+import Dados from '../../../Dados';
 
 const Carro3 = () => {
-  const slides = [
-    {
-      id: 'slide1',
-      urlImg: Frente3,
-    },
-    {
-      id: 'slide2',
-      urlImg: FrenteC3,
-    },
-    {
-      id: 'slide3',
-      urlImg: FrenteM3,
-    },
-    {
-      id: 'slide4',
-      urlImg: IntC3,
-    },
-    {
-      id: 'slide5',
-      urlImg: IntF3,
-    },
-    {
-      id: 'slide6',
-      urlImg: IntP3,
-    },
-    {
-      id: 'slide7',
-      urlImg: LadoM3,
-    },
-    {
-      id: 'slide8',
-      urlImg: Painel3,
-    },
-    {
-      id: 'slide9',
-      urlImg: TrasC3,
-    },
-    {
-      id: 'slide10',
-      urlImg: TrasM3,
-    },
-  ];
-
   const [active, setActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
@@ -68,14 +16,13 @@ const Carro3 = () => {
     if (active > 0) setActive(active - 1);
   }
   function slideNext() {
-    if (active < slides.length - 1) setActive(active + 1);
+    if (active < Dados[2].imgUrl.length - 1) setActive(active + 1);
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.title}>
-        <h1>Ford Ka Trail 1.0 12v Flex Mec 5p &#9989;</h1>
-        <img src="" alt="" />
+        <h1>{Dados[2].title}</h1>
       </div>
 
       <div
@@ -83,11 +30,11 @@ const Carro3 = () => {
         className={styles.content}
         style={{ transform: `translateX(${position}px)` }}
       >
-        {slides.map((slide) => (
+        {Dados[2].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
-            alt=""
+            src={slide.imgUrl}
+            alt="Imagem dos carros"
             className={styles.item}
           />
         ))}
@@ -101,28 +48,20 @@ const Carro3 = () => {
         </button>
       </nav>
       <div className={styles.minContent}>
-        {slides.map((slide) => (
+        {Dados[2].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
-            alt=""
+            src={slide.imgUrl}
+            alt="Imagem dos carros"
             className={styles.minItem}
           />
         ))}
       </div>
       <div className={styles.caracteristicas}>
         <h1>Características</h1>
-        <p>
-          Chave Reserva &#10004; <span></span> IPVA Pago &#10004; <span></span>
-          Licenciado &#10004; Manual &#10004;
-        </p>
+        <p>{Dados[2].caracteristicas}</p>
         <h1>Opcionais</h1>
-        <p>
-          Alarme &#10004; Ar quente &#10004; Direção Hidraulica &#10004; Porta
-          copos &#10004; Travas elétricas &#10004; Vidros elétricos &#10004;
-          Airbag motorista &#10004; Airbag passageiro &#10004; Cd player com
-          MP3&#10004;
-        </p>
+        <p>{Dados[2].opcionais}</p>
         <h1>Informações do veículo</h1>
         <p>Wilson Automóveis, há mais de 15 anos realizando sonhos!</p>
         <p>

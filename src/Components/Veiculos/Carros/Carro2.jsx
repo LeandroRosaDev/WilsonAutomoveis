@@ -1,55 +1,8 @@
 import React from 'react';
 import styles from './Carro.module.css';
-import FrenteC2 from '../../../assets/Veiculos/Carros/Carro2/FrenteC2.jpg';
-import FrenteM2 from '../../../assets/Veiculos/Carros/Carro2/FrenteM2.jpg';
-import IntC2 from '../../../assets/Veiculos/Carros/Carro2/IntC2.jpg';
-import IntM2 from '../../../assets/Veiculos/Carros/Carro2/IntM2.jpg';
-import LadoC2 from '../../../assets/Veiculos/Carros/Carro2/LadoC2.jpg';
-import LadoM2 from '../../../assets/Veiculos/Carros/Carro2/LadoM2.jpg';
-import Painel2 from '../../../assets/Veiculos/Carros/Carro2/Painel2.jpg';
-import Tras2 from '../../../assets/Veiculos/Carros/Carro2/Tras2.jpg';
-import TrasC2 from '../../../assets/Veiculos/Carros/Carro2/TrasC2.jpg';
+import Dados from '../../../Dados';
 
 const Carro2 = () => {
-  const slides = [
-    {
-      id: 'slide1',
-      urlImg: FrenteC2,
-    },
-    {
-      id: 'slide2',
-      urlImg: FrenteM2,
-    },
-    {
-      id: 'slide3',
-      urlImg: IntC2,
-    },
-    {
-      id: 'slide4',
-      urlImg: IntM2,
-    },
-    {
-      id: 'slide5',
-      urlImg: LadoC2,
-    },
-    {
-      id: 'slide6',
-      urlImg: LadoM2,
-    },
-    {
-      id: 'slide7',
-      urlImg: Painel2,
-    },
-    {
-      id: 'slide8',
-      urlImg: Tras2,
-    },
-    {
-      id: 'slide9',
-      urlImg: TrasC2,
-    },
-  ];
-
   const [active, setActive] = React.useState(0);
   const [position, setPosition] = React.useState(0);
   const contentRef = React.useRef();
@@ -63,14 +16,13 @@ const Carro2 = () => {
     if (active > 0) setActive(active - 1);
   }
   function slideNext() {
-    if (active < slides.length - 1) setActive(active + 1);
+    if (active < Dados[1].imgUrl.length - 1) setActive(active + 1);
   }
 
   return (
     <section className={styles.container}>
       <div className={styles.title}>
-        <h1>Ford Ranger XLS 2.5 16V 4x2 CS Flex &#9989;</h1>
-        <img src="" alt="" />
+        <h1>{Dados[1].title}</h1>
       </div>
 
       <div
@@ -78,11 +30,11 @@ const Carro2 = () => {
         className={styles.content}
         style={{ transform: `translateX(${position}px)` }}
       >
-        {slides.map((slide) => (
+        {Dados[1].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
-            alt=""
+            src={slide.imgUrl}
+            alt="Imagem dos carros"
             className={styles.item}
           />
         ))}
@@ -96,10 +48,10 @@ const Carro2 = () => {
         </button>
       </nav>
       <div className={styles.minContent}>
-        {slides.map((slide) => (
+        {Dados[1].imgUrl.map((slide) => (
           <img
             key={slide.id}
-            src={slide.urlImg}
+            src={slide.imgUrl}
             alt=""
             className={styles.minItem}
           />
@@ -107,17 +59,9 @@ const Carro2 = () => {
       </div>
       <div className={styles.caracteristicas}>
         <h1>Características</h1>
-        <p>
-          Chave Reserva &#10004; <span></span> IPVA Pago &#10004; <span></span>
-          Licenciado &#10004; Manual &#10004;
-        </p>
+        <p>{Dados[1].caracteristicas}</p>
         <h1>Opcionais</h1>
-        <p>
-          Alarme &#10004; Ar quente &#10004; Direção Hidraulica &#10004; Porta
-          copos &#10004; Travas elétricas &#10004; Vidros elétricos &#10004;
-          Airbag motorista &#10004; Airbag passageiro &#10004; Cd player com
-          MP3&#10004;
-        </p>
+        <p>{Dados[1].opcionais}</p>
         <h1>Informações do veículo</h1>
         <p>Wilson Automóveis, há mais de 15 anos realizando sonhos!</p>
         <p>
